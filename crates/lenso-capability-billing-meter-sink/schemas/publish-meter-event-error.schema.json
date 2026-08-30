@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"PublishMeterEventError",
+  "oneOf":[{"const":"forbidden"},{"const":"invalid_event"},{"const":"account_not_found"},{"const":"meter_not_configured"},{"const":"idempotency_conflict"},{"const":"effect_unknown"}]
+}

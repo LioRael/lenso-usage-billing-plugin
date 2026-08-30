@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","title":"PeriodResponse","type":"object",
+  "required":["organization_id","account_id","period_id","period_start","period_end","currency","status","account_revision","total_amount_minor","created_at","lines"],
+  "properties":{
+    "organization_id":{"type":"string"},"account_id":{"type":"string"},"period_id":{"type":"string"},"period_start":{"type":"string","format":"date-time"},"period_end":{"type":"string","format":"date-time"},
+    "currency":{"type":"string"},"status":{"type":"string","enum":["pending","delivered","failed","unknown"]},"account_revision":{"type":"string"},"total_amount_minor":{"type":"string"},"created_at":{"type":"string","format":"date-time"},
+    "lines":{"type":"array","items":{"$ref":"#/$defs/PeriodLine"}}
+  },"additionalProperties":false,
+  "$defs":{"PeriodLine":{"type":"object","required":["delivery_id","mapping_id","source_meter","sink_meter","quantity","usage_revision","unit_price_minor","amount_minor","status","attempts","provider_reference","failure_code"],"properties":{
+    "delivery_id":{"type":"string"},"mapping_id":{"type":"string"},"source_meter":{"type":"string"},"sink_meter":{"type":"string"},"quantity":{"type":"string"},"usage_revision":{"type":"integer"},"unit_price_minor":{"type":"string"},"amount_minor":{"type":"string"},
+    "status":{"type":"string","enum":["pending","in_flight","delivered","failed","unknown"]},"attempts":{"type":"integer"},"provider_reference":{"type":["string","null"]},"failure_code":{"type":["string","null"]}
+  },"additionalProperties":false}}
+}

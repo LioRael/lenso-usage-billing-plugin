@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GetPeriodRequest","type":"object","required":["organization_id","period_id"],"properties":{"organization_id":{"type":"string"},"period_id":{"type":"string"}},"additionalProperties":false}

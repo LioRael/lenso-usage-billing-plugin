@@ -1,0 +1,14 @@
+{
+  "id":"lenso.usage-billing@1","version":"1.0.0","portable":true,"cross_lane_transfer":true,
+  "operations":[
+    {"name":"put_account","interaction":"request","request_schema":"schemas/put-account-request.schema.json","response_schema":"schemas/account-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"get_account","interaction":"request","request_schema":"schemas/get-account-request.schema.json","response_schema":"schemas/account-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"list_accounts","interaction":"request","request_schema":"schemas/list-accounts-request.schema.json","response_schema":"schemas/list-accounts-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"close_period","interaction":"request","request_schema":"schemas/close-period-request.schema.json","response_schema":"schemas/period-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"get_period","interaction":"request","request_schema":"schemas/get-period-request.schema.json","response_schema":"schemas/period-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"list_periods","interaction":"request","request_schema":"schemas/list-periods-request.schema.json","response_schema":"schemas/list-periods-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"reconcile_next","interaction":"request","request_schema":"schemas/reconcile-next-request.schema.json","response_schema":"schemas/reconcile-next-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"inspect_delivery","interaction":"request","request_schema":"schemas/inspect-delivery-request.schema.json","response_schema":"schemas/delivery-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"},
+    {"name":"resolve_delivery","interaction":"request","request_schema":"schemas/resolve-delivery-request.schema.json","response_schema":"schemas/delivery-response.schema.json","domain_error_schema":"schemas/usage-billing-error.schema.json"}
+  ]
+}
