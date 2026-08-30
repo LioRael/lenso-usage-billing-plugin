@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ListPeriodsResponse","type":"object","required":["periods","next_cursor"],"properties":{"periods":{"type":"array","items":{"$ref":"period-response.schema.json"}},"next_cursor":{"type":["string","null"]}},"additionalProperties":false}

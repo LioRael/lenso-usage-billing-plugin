@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"InspectDeliveryRequest","type":"object","required":["organization_id","delivery_id"],"properties":{"organization_id":{"type":"string"},"delivery_id":{"type":"string"}},"additionalProperties":false}

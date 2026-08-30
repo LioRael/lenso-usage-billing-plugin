@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ReconcileNextRequest","type":"object","required":["worker_id"],"properties":{"worker_id":{"type":"string"}},"additionalProperties":false}

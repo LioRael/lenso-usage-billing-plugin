@@ -1,0 +1,9 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"PublishMeterEventResponse","type":"object",
+  "required":["accepted","provider_reference","outcome"],
+  "properties":{
+    "accepted":{"type":"boolean"},"provider_reference":{"type":"string"},
+    "outcome":{"type":"string","enum":["accepted","replayed"]}
+  },"additionalProperties":false
+}

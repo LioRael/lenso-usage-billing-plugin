@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ReconcileNextResponse","type":"object","required":["status","delivery_id","period_id"],"properties":{"status":{"type":"string","enum":["idle","delivered","failed","unknown"]},"delivery_id":{"type":["string","null"]},"period_id":{"type":["string","null"]}},"additionalProperties":false}

@@ -1,0 +1,15 @@
+{
+  "id": "lenso.billing-meter-sink@1",
+  "version": "1.0.0",
+  "portable": true,
+  "cross_lane_transfer": true,
+  "operations": [
+    {
+      "name": "publish_meter_event",
+      "interaction": "request",
+      "request_schema": "schemas/publish-meter-event-request.schema.json",
+      "response_schema": "schemas/publish-meter-event-response.schema.json",
+      "domain_error_schema": "schemas/publish-meter-event-error.schema.json"
+    }
+  ]
+}

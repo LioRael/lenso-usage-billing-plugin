@@ -1,0 +1,47 @@
+[package]
+name = "lenso-usage-billing-postgres-plugin"
+version = "0.1.0"
+description = "PostgreSQL Usage Billing orchestration Plugin for Lenso."
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[package.metadata.lenso]
+plugin-id = "lenso.usage-billing.postgres"
+root-slot = "usage-billing"
+
+[features]
+default = []
+postgres-acceptance = []
+
+[dependencies]
+futures.workspace = true
+lenso.workspace = true
+lenso-auth-sdk.workspace = true
+lenso-capability-access-control.workspace = true
+lenso-capability-billing-meter-sink = { path = "../lenso-capability-billing-meter-sink", version = "0.1.0" }
+lenso-capability-organization-membership.workspace = true
+lenso-capability-secrets.workspace = true
+lenso-capability-usage-billing = { path = "../lenso-capability-usage-billing", version = "0.1.0" }
+lenso-capability-usage-meter.workspace = true
+lenso-kernel.workspace = true
+lenso-postgres-kit.workspace = true
+num-bigint.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sqlx.workspace = true
+thiserror.workspace = true
+time.workspace = true
+uuid.workspace = true
+zeroize.workspace = true
+
+[dev-dependencies]
+lenso-app-plan.workspace = true
+lenso-native-adapter.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true

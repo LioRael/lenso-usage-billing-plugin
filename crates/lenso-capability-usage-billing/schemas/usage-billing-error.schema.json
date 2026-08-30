@@ -1,0 +1,4 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","title":"UsageBillingError",
+  "oneOf":[{"const":"unauthenticated"},{"const":"forbidden"},{"const":"invalid_request"},{"const":"not_found"},{"const":"revision_conflict"},{"const":"idempotency_conflict"},{"const":"period_conflict"},{"const":"account_disabled"},{"const":"source_rejected"},{"const":"delivery_not_found"},{"const":"invalid_resolution"}]
+}

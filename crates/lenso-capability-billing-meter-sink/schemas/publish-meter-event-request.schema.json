@@ -1,0 +1,11 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"PublishMeterEventRequest","type":"object",
+  "required":["delivery_id","scope_kind","scope_id","subject","meter","quantity","occurred_at"],
+  "properties":{
+    "delivery_id":{"type":"string"},"scope_kind":{"type":"string"},
+    "scope_id":{"type":"string"},"subject":{"type":"string"},
+    "meter":{"type":"string"},"quantity":{"type":"string"},
+    "occurred_at":{"type":"string","format":"date-time"}
+  },"additionalProperties":false
+}

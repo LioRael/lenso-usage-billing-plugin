@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ListAccountsResponse","type":"object","required":["accounts","next_cursor"],"properties":{"accounts":{"type":"array","items":{"$ref":"account-response.schema.json"}},"next_cursor":{"type":["string","null"]}},"additionalProperties":false}

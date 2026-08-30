@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GetAccountRequest","type":"object","required":["organization_id","account_id"],"properties":{"organization_id":{"type":"string"},"account_id":{"type":"string"}},"additionalProperties":false}
