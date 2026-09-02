@@ -1,6 +1,6 @@
 [package]
 name = "lenso-usage-billing-postgres-plugin"
-version = "0.1.0"
+version = "0.1.1"
 description = "PostgreSQL Usage Billing orchestration Plugin for Lenso."
 edition.workspace = true
 license.workspace = true
@@ -21,10 +21,10 @@ futures.workspace = true
 lenso.workspace = true
 lenso-auth-sdk.workspace = true
 lenso-capability-access-control.workspace = true
-lenso-capability-billing-meter-sink = { path = "../lenso-capability-billing-meter-sink", version = "0.1.0" }
+lenso-capability-billing-meter-sink = { path = "../lenso-capability-billing-meter-sink", version = "0.1.1" }
 lenso-capability-organization-membership.workspace = true
 lenso-capability-secrets.workspace = true
-lenso-capability-usage-billing = { path = "../lenso-capability-usage-billing", version = "0.1.0" }
+lenso-capability-usage-billing = { path = "../lenso-capability-usage-billing", version = "0.1.1" }
 lenso-capability-usage-meter.workspace = true
 lenso-kernel.workspace = true
 lenso-postgres-kit.workspace = true
