@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-expected_crates=$'lenso-capability-billing-meter-sink\nlenso-capability-usage-billing\nlenso-usage-billing-postgres-plugin'
+expected_crates=$'lenso-capability-billing-meter-sink\nlenso-capability-usage-billing\nlenso-usage-billing-agent-tools-plugin\nlenso-usage-billing-postgres-plugin'
 actual_crates="$(find crates -mindepth 2 -maxdepth 2 -name Cargo.toml -print0 | xargs -0 sed -n 's/^name = "\([^"]*\)"/\1/p' | sort)"
 if [[ "$actual_crates" != "$expected_crates" ]]; then
   echo "unexpected workspace crate boundary" >&2

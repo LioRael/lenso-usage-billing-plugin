@@ -3,6 +3,7 @@ resolver = "2"
 members = [
     "crates/lenso-capability-billing-meter-sink",
     "crates/lenso-capability-usage-billing",
+    "crates/lenso-usage-billing-agent-tools-plugin",
     "crates/lenso-usage-billing-postgres-plugin",
 ]
 
@@ -18,6 +19,7 @@ futures = "0.3"
 lenso = { version = "0.5.0" }
 lenso-app-plan = { version = "0.3.0" }
 lenso-auth-sdk = { version = "0.2.1" }
+lenso-capability-agent-tool-provider = { version = "0.1.0" }
 lenso-capability-access-control = { version = "0.1.0" }
 lenso-capability-organization-membership = { version = "0.1.0" }
 lenso-capability-secrets = { version = "0.1.1" }

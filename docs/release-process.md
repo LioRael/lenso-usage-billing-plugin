@@ -6,6 +6,9 @@ Publish in this order:
 2. `lenso-capability-usage-billing`
 3. `lenso-usage-billing-postgres-plugin`
 
+The linked read-only Agent Tool adapter is private and is not part of this
+release set.
+
 Publication is manual-only from reviewed `main` through
 `.github/workflows/release-plz.yml`.
 
