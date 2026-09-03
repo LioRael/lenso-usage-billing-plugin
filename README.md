@@ -23,6 +23,11 @@ Control. Administrative requests require an exact configured caller, an Auth
 ActorAssertion bound to the exact operation, active membership, and a target-owned
 permission. Reconciliation uses a separate exact worker allowlist.
 
+The private, stateless `lenso.usage-billing.agent-tools` adapter exposes only
+get/list account, get/list period, and delivery inspection to a Console Agent.
+It deliberately excludes account writes, period close, reconciliation, and
+delivery resolution.
+
 ## Period and delivery guarantees
 
 - PostgreSQL is the only runtime state; no aggregate or retry state is in memory.
