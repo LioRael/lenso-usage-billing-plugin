@@ -821,7 +821,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-capability-billing-meter-sink"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso-contract-runtime",
@@ -863,7 +863,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-capability-usage-billing"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso-contract-runtime",
@@ -1034,7 +1034,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-usage-billing-postgres-plugin"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso",

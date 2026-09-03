@@ -1,6 +1,6 @@
 [package]
 name = "lenso-capability-billing-meter-sink"
-version = "0.1.0"
+version = "0.1.1"
 description = "Provider-neutral Billing Meter Sink Capability for Lenso."
 edition.workspace = true
 license.workspace = true
